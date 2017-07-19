@@ -13,7 +13,11 @@
  *= require_tree .
  *= require_self
  */
- h1 {
+ html,body {
+     height: 100%;
+ }
+ 
+.todolist {
     color: green;
     text-align: center;
     font-family: fantasy;
@@ -21,16 +25,38 @@
     border: double;
     border-color: black;
 }
-body {
+.backsize1 {
     background-image: url("https://images5.alphacoders.com/374/374293.jpg");
+    height: 100%;
 }
 .white {
     color: #01DF3A;
 }
-a {
+.a1 {
     text-decoration: none;
     color: #01DF3A;
 }
 .yan {
     color: #B03A2E;
 }
+#deletecolor {
+    color: red;
+}
+a2 {
+    text-decoration: none;
+    color: #F1C40F;
+}
+backsize2 {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg0BEx87uBOa0-Z6d-3kj1f_eGIdECD1vOHPRG4Boppg4QeSNS");
+}
+.eat {
+    text-align: center;
+}
+.eat2 {
+    color: green;
+    text-align: center;
+    font-family: fantasy;
+    font-size: 50px;
+}
+
+    
