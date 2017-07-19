@@ -13,3 +13,24 @@
  *= require_tree .
  *= require_self
  */
+ h1 {
+    color: green;
+    text-align: center;
+    font-family: fantasy;
+    font-size: 50px;
+    border: double;
+    border-color: black;
+}
+body {
+    background-image: url("https://images5.alphacoders.com/374/374293.jpg");
+}
+.white {
+    color: #01DF3A;
+}
+a {
+    text-decoration: none;
+    color: #01DF3A;
+}
+.yan {
+    color: #B03A2E;
+}
