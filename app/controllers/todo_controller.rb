@@ -4,4 +4,9 @@ class TodoController < ApplicationController
     def show
         @todo=Todo.find_by_id(params[:id])
     end
-end
+        def edit
+            @todo=Todo.find_by_id(params[:id])
+        end
+            def delete
+            end
+        end
