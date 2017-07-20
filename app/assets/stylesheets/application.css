@@ -29,11 +29,14 @@
     padding: 5px;
 }
 .backsize1 {
-    background-image: url("https://s-media-cache-ak0.pinimg.com/originals/b3/db/09/b3db09d4dd668a77267e9e9f11e0778d.jpg");
-    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
 .white {
     color: #01DF3A;
+    margin: -20px;
 }
 .a1 {
     text-decoration: none;
@@ -50,7 +53,10 @@
     color: #F1C40F;
 }
 .backsize2 {
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg0BEx87uBOa0-Z6d-3kj1f_eGIdECD1vOHPRG4Boppg4QeSNS");
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 .eat {
     text-align: center;
@@ -60,6 +66,7 @@
     text-align: center;
     font-family: fantasy;
     font-size: 50px;
+    margin: 0px;
 }
 
     
