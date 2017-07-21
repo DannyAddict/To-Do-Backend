@@ -3,22 +3,17 @@
     <h1 class= "todolist">To-Do List</h1>
     <div><strong class= "yan">To-Do App</strong></div>
             <br>
-<ul class= "white" style= "list-style-type: none">
-    <a class: "a1" href= "show.html">
-        <li><input type= "checkbox"> Eat </li> 
-    </a>
-        <li><input type= "checkbox">Code</li>
-        <li><input type= "checkbox">Sleep</li>
-</ul> 
+    <% @todos.each do |todo| %>
+        <li>
+            <input class="nodot" type= "checkbox" name=""/>
+            <a href= "todo/show/<%=todo.id %>"><%= todo.description %>
+            <span class= "pomodoro_estimate small-pomodoro-estimate"><%= todo.pomodoro_estimate %> Pomodoros</span>
+            </a>
+        </li>
+    <% end %>
             <br>
-    <div id= "new-todo-block">
-        <input id="new-todo-description" class= "text-input" type= "text" placeholder= "Task">
-            <br>
-        <input id="new-pomodoro-estimate" class= "text-input"  type= "number">    
-            <br>
-        <input class= "text-input" type= "text" placeholder= "description...">
-            <br>
-        <input id="add-new-todo-button" class= "button" type= "submit" value= "Add">
-    </div>
-         <input type= "date">
+        <div id= "new-todo-block">
+            <a href= "/todo/new" class= "button add-new-todo-button" id= "add-new-todo-button">Add a todo</a>
+        </div>
+  
 </div>

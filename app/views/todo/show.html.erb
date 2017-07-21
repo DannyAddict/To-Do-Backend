@@ -4,12 +4,12 @@
             <ul>
                 <h1 class= "eat2"><%=@todo.description%> <%=@todo.pomodoro_estimate%></h1>
                 <br>
-                <h4 class= "eat">Desc...</h4></h4>
+                <h4 class= "eat">Desc...</h4>
                 <br>
                 <h4 class= "eat">Date...</h4>
                 <br>
-                    <a class= "a2" href= "#">Edit</a>
-                    <a id="deletecolor" href= "#">Delete</a>
-                    <a href= "index.html">Back</a>
+                    <a href="/todo/edit/<%=@todo.id %>" class= "button edit-todo-button">Edit</a>
+                    <a href="/todo/destroy/<%= @todo.id %>" class= "button delete-todo-button">Delete</a>
+                    <a href="/" class= "simple-link">Go back</a>
             </ul>
         </div>        
